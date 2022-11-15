@@ -7,8 +7,15 @@
 #     "surfboard"
 
 def gear_for_day(is_workday, is_sunny):
-    day=""
+    list1 = "umbrella"
+    list2 = "laptop"
+    list3 = "surfboard"
 
-    if "day" 
+    if not is_sunny and is_workday:
+        return list1
+    if is_workday:
+        return list2
+    if not is_workday:
+        return list3
 
-        return gear_for_day
+print(gear_for_day("Friday", "No"))

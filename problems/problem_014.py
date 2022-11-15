@@ -11,12 +11,17 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    ingrlist = "flour", "eggs", "oil"
+    ingrlist = ["flour", "eggs", "oil"]
 
-    if ingrlist in ingredients:
+    for ingredient in ingredients:
+
+        if ingredient in ingrlist:
+            ingrlist.remove(ingredient)
+    if len(ingrlist) == 0:
         return True
-
     else:
         return False
 
-print(can_make_pasta(ingrlist))
+
+
+print(can_make_pasta(["flour", "oil"]))

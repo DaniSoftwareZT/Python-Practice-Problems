@@ -20,7 +20,7 @@ def fizzbuzz(number):
     word2 = "fizz"
     word3 = "buzz"
 
-    if number % 3 and 5 == 0:
+    if number % 3 ==0 and number % 5 == 0:
         return word1
     if number % 3 == 0:
         return word2

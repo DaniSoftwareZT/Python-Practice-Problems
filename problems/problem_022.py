@@ -7,4 +7,8 @@
 #     "surfboard"
 
 def gear_for_day(is_workday, is_sunny):
-    pass
+    day=""
+
+    if "day" 
+
+        return gear_for_day

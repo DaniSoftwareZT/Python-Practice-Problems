@@ -8,4 +8,11 @@
 # problem to get a good feel for how to solve it.
 
 def is_divisible_by_5(number):
-    pass
+    word = "buzz"
+
+    if number % 5 == 0:
+        return word
+    else:
+        return number
+
+print(is_divisible_by_5(25))

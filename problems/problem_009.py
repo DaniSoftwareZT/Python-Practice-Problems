@@ -13,4 +13,12 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    letter = list(word)
+    letter.reverse()
+    reverse_word = "".join(letter)
+    print((reverse_word),(word))
+    if (reverse_word) == (word):
+        return True
+
+
+print(is_palindrome("racecar")) 

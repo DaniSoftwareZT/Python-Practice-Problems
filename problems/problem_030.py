@@ -12,4 +12,21 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+
+    if len(values) == 0:
+        return None
+    elif len(values) == 1:
+        return None
+    mx = max(values[0], values[1])
+    secondmax = min(values[0], values[1])
+    n= len(values)
+    for i in range(2, n):
+        if values[i] > mx:
+            secondmax = mx
+            mx = values[i]
+        elif values[i] > secondmax and mx != values[i]:
+            secondmax = values[i]
+        elif mx == secondmax and secondmax != values[i]:
+            secondmax = values[i]
+
+print(find_second_largest([3, 6, 9, 12]))

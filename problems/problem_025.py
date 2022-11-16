@@ -7,4 +7,13 @@
 #
 
 def calculate_sum(values):
-    pass
+
+    print(values)
+
+    if len(values) != 0:
+        return sum(values)
+
+    else:
+        return 'empty'
+
+print(calculate_sum([2, 9, 20]))

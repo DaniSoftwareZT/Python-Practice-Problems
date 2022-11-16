@@ -6,16 +6,38 @@
 #   * If it is not a workday, the list needs to contain
 #     "surfboard"
 
-def gear_for_day(is_workday, is_sunny):
-    list1 = "umbrella"
-    list2 = "laptop"
-    list3 = "surfboard"
+def gear_for_day(day_of_week, is_sunny):
 
-    if not is_sunny and is_workday:
-        return list1
-    if is_workday:
-        return list2
-    if not is_workday:
-        return list3
+    # list1 = "umbrella"
+    # list2 = "laptop"
+    # list3 = "surfboard"
 
-print(gear_for_day("Friday", "No"))
+    weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    weekends = ["Saturday", "Sunday"]
+    backpack = []
+
+    for day in weekdays:
+        if day_of_week == day and not is_sunny:
+            backpack.append("umbrella")
+
+        if day_of_week == day:
+            backpack.append("laptop")
+
+    for day in weekends:
+        if day_of_week == day:
+            backpack.append("surfboard")
+
+
+    return backpack
+
+
+
+
+    # if not is_sunny and is_workday:
+    #     return list1
+    # if is_workday:
+    #     return list2
+    # if not is_workday:
+    #     return list3
+
+print(gear_for_day("Monday", False))

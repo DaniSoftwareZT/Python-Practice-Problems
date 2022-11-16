@@ -9,13 +9,13 @@
 
 def calculate_average(values):
 
-    list = [2, 4, 6]
 
-    sum(list) / len(list)
+    if len(values) != 0:
+        return sum(values) / len(values)
 
 
-    if len(list) == 0:
+    if len(values) == 0:
         return None
 
 
-print(calculate_average([2, 4]))
+print(calculate_average([5, 10]))

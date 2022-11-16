@@ -12,5 +12,19 @@
 #     and less than 70
 #   * An "F" for any other average
 
-def calculate_grade(values):
-    pass
+def calculate_grade(scores):
+
+    print(scores)
+
+    if sum(scores) / len(scores) >= 90:
+        return "A"
+    elif sum(scores) / len(scores) >= 80:
+        return "B"
+    elif   sum(scores) / len(scores) >= 70:
+        return "C"
+    elif sum(scores) / len(scores) >= 60:
+        return "D"
+    else:
+        return "F"
+
+print(calculate_grade([99, 82, 35]))

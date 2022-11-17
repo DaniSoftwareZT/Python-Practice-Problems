@@ -24,3 +24,14 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
+
+    numstr = str(number)        # numstr is making the number chosen a string
+    strleng = len(numstr)       # strleng is getting the len of our string which is numstr
+
+    diference = length - strleng       # diference is the assigned variable to the equation. lenght in this case is 7 and strleng is 2 meaning the plus signs = 5
+    result = pad * diference + numstr  # result is the assigned variable to equation.  pad in this case is +  then multiply by 5 + numstr which is the string 12= result
+
+    return result
+
+
+print(pad_left(12, 7, "+"))

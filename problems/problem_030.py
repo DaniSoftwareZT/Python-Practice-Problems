@@ -17,6 +17,7 @@ def find_second_largest(values):
         return None
     elif len(values) == 1:
         return None
+
     mx = max(values[0], values[1])
     secondmax = min(values[0], values[1])
     n= len(values)
@@ -28,5 +29,6 @@ def find_second_largest(values):
             secondmax = values[i]
         elif mx == secondmax and secondmax != values[i]:
             secondmax = values[i]
+    return secondmax
 
-print(find_second_largest([3, 6, 9, 12]))
+print(find_second_largest([3, 24, 9, 12, 46, 12]))

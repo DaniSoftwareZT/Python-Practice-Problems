@@ -14,11 +14,16 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_squares(values):
+#assign 0 to total so it can start at 0
+    total = 0
+
+    if len(values) == 0:
+        return None
 
     for value in values:
-        
 
-        if len(values) == 0:
-            return None
+        total = total + value * value
 
-print(sum_of_squares())
+    return total
+
+print(sum_of_squares([2, 4, 6]))

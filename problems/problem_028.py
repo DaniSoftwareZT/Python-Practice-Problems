@@ -11,12 +11,14 @@
 # If the list is empty, then return the empty string.
 
 def remove_duplicate_letters(s):
-    word = 'letter', 'greater', 'lesser'
-    s = 'abcdefghijklmnop'
 
+    empty = ""
 
+    for letter in s:
 
-    print(s.replace())
+        if letter not in empty:
+            empty += letter
 
+    return empty
 
-print(remove_duplicate_letters())
+print(remove_duplicate_letters("abccbad"))
